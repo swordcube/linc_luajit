@@ -585,9 +585,10 @@ class Lua_helper {
 			ret = Reflect.callMethod(null, cbf, args);
 		}
 
-		if(ret != null){
+		if(ret == null)
+			return 0;
+		else
 			Convert.toLua(l, ret);
-		}
 
 		/* return the number of results */
 		return 1;
