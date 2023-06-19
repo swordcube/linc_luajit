@@ -1,6 +1,11 @@
 #pragma once
 
+#ifndef HXCPP_H
 #include <hxcpp.h>
+#else
+#include <hxcpp.h.gch>
+#endif
+
 #include <hx/CFFI.h>
 
 #include <sstream>

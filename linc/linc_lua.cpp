@@ -1,4 +1,9 @@
+#ifndef HXCPP_H
 #include <hxcpp.h>
+#else
+#include <hxcpp.h.gch>
+#endif
+
 #include <hx/CFFI.h>
 
 #include "./linc_lua.h"
